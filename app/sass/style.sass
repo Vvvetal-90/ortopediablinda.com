@@ -1,0 +1,497 @@
+$yellow-color: #ffe404
+$white-color: #fff
+$blue-color: #00CCF6
+
+//Colors
+.yellow
+	color: $yellow-color
+.white
+	color: $white-color
+.dark
+	color: #333333
+
+body
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+10,38dbf1+25,fefbce+47 */
+	background: #fefbce linear-gradient(to bottom, #018db1 10%,#38dbf1 25%,#fefbce 47%) no-repeat /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	font: italic 20px 'TitilliumText22LRegular', sans-serif
+
+
+.logo-all,
+.logo,
+.logo-info,
+.main>li
+	float: left
+
+.top-menu
+	float: right
+
+//top-navbar
+
+.top-navbar
+	margin-top: 30px
+	& p
+		margin: 0
+		padding: 0
+//Logo
+
+.logo
+	font: bold  90px 'TitilliumText22LRegular', sans-serif
+	background-color: $blue-color
+	border-radius: 50%
+	padding: 0 26px
+
+.logo-info
+	margin: 5px 0 5px 10px
+	& p
+		font-style: normal
+	&-header
+		font-size: 36px
+		text-transform: uppercase
+		font-weight:  bold
+		color: $blue-color
+	&-text.white
+		font-size: 16px
+		font-weight:  bold
+	&-text
+		font-size: 15px
+	&-text span
+		font-weight:  bold
+
+.top-menu ul,
+.pagination-pages
+	list-style: none
+	margin: 0
+	padding: 0
+
+.main>li
+	position: relative
+
+.main>li>a
+	text-transform: uppercase
+	color: $white-color
+	font-size: 14px
+	text-decoration: none
+	padding: 23px 15px 22px
+
+
+.main>.current-menu-item>a,
+.main>li>a:hover
+	color: $yellow-color
+	border-bottom: 4px solid $yellow-color
+
+
+.sub-menu
+	position: absolute
+	top: 48px
+	width: 190px
+	display: none
+	z-index: 99
+	a
+		padding: 8px 18px 8px 15px
+		font-size: 12px
+		font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif
+		text-transform: none
+		background: #d8edf4
+		border-bottom: 1px solid #cbdfe6
+		color: #019ac1
+		display: block
+		line-height: 15px
+		&:hover
+			color: #3c4349
+			text-decoration: none
+			background-color: #eee
+
+.menu-item-has-children:hover .sub-menu
+	display: block
+
+			
+//-----------------------------------------Content
+
+.content
+	background-color: #fff
+	
+.content.home-page
+	margin-top: 30px
+
+.content,
+.footer-top,
+.footer-bottom
+	box-shadow: 0px 0px 4px -1px rgba(0,0,0,0.75)
+	padding: 20px 25px
+
+.info-img,
+.info-text
+	float: left
+
+.info-img
+	margin-right: 20px
+
+.info-text
+	width: 65%
+	span
+		color: #929292
+
+.info-button
+	float: right
+	.fa
+		margin-left: 5px
+
+.button
+	color: #838889
+	background-color: #eee
+	font: 18px 'TitilliumText22LMedium', sans-serif
+	text-transform: uppercase
+	padding: 12px 20px
+	border-radius: 8px
+	font-style: italic
+	display: inline-block
+	box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.68)
+	display: inline-block
+	vertical-align: middle
+	&:hover,
+	&:focus,
+	&:active
+		background-color: #01A5CA
+		text-decoration: none
+		color: #fff
+		text-shadow: 0px 0px 1px rgba(0, 0, 0, 1)
+	.fa
+		vertical-align: middle
+
+.button-pagination-before,
+.button-pagination-after
+	transition: width 0.5s ease-out 0.5s
+	font-size: 12px
+	padding: 6px 12px
+	text-transform: none
+	.fa
+		width: 0
+		overflow: hidden
+		transition: width ease-out 0.3s
+
+.button-pagination-before:hover .fa,
+.button-pagination-before:focus .fa,
+.button-pagination-before:active .fa,
+.button-pagination-after:hover .fa,
+.button-pagination-after:focus .fa,
+.button-pagination-after:active .fa
+	width: 15px
+
+.button-pagination-before:hover .fa,
+.button-pagination-before:focus .fa,
+.button-pagination-before:active .fa
+	padding-right: 5px
+
+.button-pagination-after:hover .fa,
+.button-pagination-after:focus .fa,
+.button-pagination-after:active .fa
+	padding-left: 5px
+
+.category-link
+	background: url("../images/cat.jpg")  0 2px no-repeat
+	padding: 5px 0 5px 25px
+	color: #aaa
+	text-decoration: none
+	font: italic 12px/22px  "Lucida Sans Unicode", "Lucida Grande", sans-serif
+	&:hover,
+	&:focus,
+	&:active
+		color: #01719f
+		text-decoration: none
+
+
+.separator
+	margin: 20px 0
+	height: 6px
+	width: 100%
+	background: #ccc url("../images/separator.jpg") repeat-x
+
+.separator-slim
+	height: 1px
+	width: 100%
+	background: url("../images/separator_slim.jpg") repeat-x
+	margin: 30px 0
+
+.banner img
+	float: right
+	width: 100%
+	height: auto
+	max-width: 249px
+
+.thumbnail-img img 
+	max-width: 280px
+	width: 100%
+	height: auto
+
+.thumbnail-post h3
+	margin: 0 0 10px 0
+	a
+		color: #000
+		font: italic 25px  'Lucida Grande', sans-serif
+		font-weight: bold
+		&:hover
+			text-decoration: none
+			color: #00b7d8
+
+.thumbnail-post-text
+	font: 12px/18px 'Lucida Sans Unicode', 'Lucida Grande', sans-serif
+	color: #737373
+	font-style: italic
+
+.thumbnail-pagination
+	display: inline-block
+
+.center
+	margin: 0 auto
+	text-align: center
+
+.button-pagination-before,
+.pagination-pages,
+.button-pagination-after
+	float: left
+	display: inline-block
+	vertical-align: middle
+	box-sizing: border-box
+
+.button-pagination-before
+	margin-right: 4px
+
+.button-pagination-after
+	margin-left: 4px
+
+.pagination-pages
+	font-size: 14px
+	font-style: normal
+	li
+		float: left
+		display: inline-block
+		vertical-align: middle
+		a
+			color: #b5b5b5
+			border: 1px solid #b5b5b5
+			border-radius: 4px
+			padding: 5px 9px
+			margin: 0px 4px
+			display: inline-block
+			vertical-align: middle
+			&:hover,
+			&:focus,
+			&:active
+				text-decoration: none
+				color: #222b31
+				border: 1px solid #222b31
+		.active
+			text-decoration: none
+			color: #222b31
+			border: 1px solid #222b31
+
+
+
+//------------------------------------Footer
+
+.footer
+	color: #fff
+	margin-bottom: 30px
+
+.footer-top
+	background-color: #028FBA
+	p
+		margin: 10px 0 0 0
+
+.sidebar-header
+	font: 16px 'TitilliumText22LMedium', sans-serif
+	font-weight: bold
+	font-style: italic
+
+.sidebar-text
+	font: 12px/15px 'Lucida Sans Unicode', 'Lucida Grande', sans-serif, italic
+
+.sidebar-links
+	list-style: none
+	margin: 10px 0 0 0
+	padding: 0
+	.fa
+		display: none
+		color: #fff
+	li
+		margin-top: 10px
+		a
+			color: #1cc4da
+			font: italic 12px/15px "Lucida Sans Unicode", "Lucida Grande", sans-serif
+			&:hover,
+			&:focus,
+			&:active
+				text-decoration: none
+	li.active
+		a
+			border-bottom: 4px solid #ffe404
+
+.sidebar-links a:hover .fa,
+.sidebar-links a:focus .fa,
+.sidebar-links a:active .fa,
+.sidebar-links .active .fa
+	display: inline-block
+	padding: 0 5px
+
+
+
+.footer-bottom
+	background-color: #005779
+	font-weight: bold
+	font-style: normal
+	color: #4d89a1
+	font-size: 13px
+	padding: 30px
+	p
+		margin: 0
+
+//---------------------------CONTACTO--------------------
+
+.breadcrumbs
+	margin: 15px 0
+	color: #b3deea
+	font: 11px 'Lucida Sans Unicode', 'Lucida Grande', sans-serif
+	.fa
+		margin: 0 5px
+
+.home-breadcrumb
+	padding-left: 23px;
+	background: url("../images/home_icon.png") no-repeat left top
+
+
+.home-breadcrumb,
+.category-breadcrumb
+	color: #00597f
+.content-top-header,
+.product-content-top-header
+	background: #03b0d0 linear-gradient(to right, #0098ba 0%,#04b9d6 50%,#0098ba 100%)
+	margin: -20px -25px 0px
+	padding: 20px 25px
+	h1
+		margin: 0
+		font: 40px 'TitilliumText22LMedium', sans-serif
+		color: #ffffff
+		font-weight: bold
+
+.page-content
+	margin-top: 30px
+	font-style: normal
+	font-size: 25px
+	font-weight: bold
+
+.page-content-header
+	color: #10b9da
+	font-style: italic
+	font-size: 36px
+	span
+		color: #ff0
+
+.page-content-text
+	color: #10b9da
+.page-content-text.dark
+	color: #333
+	margin: 20px 0 0 
+
+
+//------------------------PODUCT PAGE-------------------
+
+.product-content-top-header
+	h2
+		margin: 0
+		font: 40px 'TitilliumText22LMedium', sans-serif
+		color: #ffffff;
+		font-weight: bold;
+		font-style: italic;
+
+.product-content
+	margin-top: 30px
+	h1
+		margin: 0
+		font: 36px 'Lucida Grande', sans-serif
+		font-style: italic
+		font-weight: bold
+	p
+		font: 12px/15px "Lucida Sans Unicode", "Lucida Grande", sans-serif
+		margin: 0
+
+.blue-text
+	color: #36f
+	margin: 10px 0 20px
+
+.images-gallery
+	a:hover,
+	a:active,
+	a:focus
+		text-decoration: none
+		outline: none
+	img
+		max-width: 200px
+
+//---------------------------CATEGORY--------------------
+.category-content
+	margin-top: 30px
+
+
+//---------------------------MEDIA--------------------
+
+//@media only screen and (min-width : 320px)
+//@media only screen and (max-width : 479px)
+//@media only screen and (min-width : 480px)
+//@media screen and (max-width: 767px)
+//@media (min-width: 768px)
+//@media (min-width: 768px) and (max-width: 991px)
+//@media (min-width: 992px)
+//@media (min-width: 992px) and (max-width: 1199px)
+//@media (min-width: 1200px)
+
+
+
+
+@media screen and (max-width: 991px)
+	.info-text
+		width: calc(100% - 80px)
+		font-size: 14px
+	.info-button
+		text-align: center
+		float: none
+
+
+@media screen and (max-width: 767px)
+	.banner img
+		float: none
+	.banner
+		text-align: center
+		margin-top: 30px
+
+	.thumbnail-post h3
+		margin-top: 10px
+
+	.product-content img
+		max-width: 336px
+		width: 100%
+		height: auto
+	.product-content .banner img
+		max-width: 249px
+
+	.breadcrumbs
+		margin-top: 50px
+
+
+		
+@media only screen and (max-width : 479px)
+	.logo
+		display: none
+	.button-pagination-before,
+	.button-pagination-after,
+	.pagination-pages
+		float: none
+		text-align: center
+		margin-bottom: 10px
+	
+	.page-content
+		font-size: 14px
+	.page-content-header
+		font-size: 25px
+
+	.breadcrumbs
+		margin-top: 30px
