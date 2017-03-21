@@ -221,7 +221,7 @@ body {
     color: #000;
     font: italic 25px  'Lucida Grande', sans-serif;
     font-weight: bold; }
-    .thumbnail-post h3 a:hover {
+    .thumbnail-post h3 a:hover, .thumbnail-post h3 a:active, .thumbnail-post h3 a:focus {
       text-decoration: none;
       color: #00b7d8; }
 
@@ -407,6 +407,12 @@ body {
 
 .images-gallery img {
   max-width: 200px; }
+
+p.first-paragraph {
+  margin-top: 10px; }
+
+.images-gallery {
+  margin: 10px 0; }
 
 .category-content {
   margin-top: 30px; }
