@@ -151,14 +151,16 @@ body {
     vertical-align: middle; }
 
 .button-pagination-before,
-.button-pagination-after {
+.button-pagination-after,
+.button-productCat {
   -webkit-transition: width 0.5s ease-out 0.5s;
   transition: width 0.5s ease-out 0.5s;
   font-size: 12px;
   padding: 6px 12px;
   text-transform: none; }
   .button-pagination-before .fa,
-  .button-pagination-after .fa {
+  .button-pagination-after .fa,
+  .button-productCat .fa {
     width: 0;
     overflow: hidden;
     -webkit-transition: width ease-out 0.3s;
@@ -169,7 +171,10 @@ body {
 .button-pagination-before:active .fa,
 .button-pagination-after:hover .fa,
 .button-pagination-after:focus .fa,
-.button-pagination-after:active .fa {
+.button-pagination-after:active .fa,
+.button-productCat:hover .fa,
+.button-productCat:focus .fa,
+.button-productCat:active .fa {
   width: 15px; }
 
 .button-pagination-before:hover .fa,
@@ -179,8 +184,14 @@ body {
 
 .button-pagination-after:hover .fa,
 .button-pagination-after:focus .fa,
-.button-pagination-after:active .fa {
+.button-pagination-after:active .fa,
+.button-productCat:hover .fa,
+.button-productCat:focus .fa,
+.button-productCat:active .fa {
   padding-left: 5px; }
+
+.button-productCat {
+  font-style: normal; }
 
 .category-link {
   background: url("../images/cat.jpg") 0 2px no-repeat;
@@ -193,7 +204,7 @@ body {
     text-decoration: none; }
 
 .separator {
-  margin: 20px 0;
+  margin: 30px 0;
   height: 6px;
   width: 100%;
   background: #ccc url("../images/separator.jpg") repeat-x; }
@@ -413,6 +424,14 @@ p.first-paragraph {
 
 .images-gallery {
   margin: 10px 0; }
+
+.product-content-list {
+  color: #ccc;
+  margin: 10px 0;
+  padding: 0 0 0 20px; }
+  .product-content-list li {
+    color: #525050;
+    font: 12px/15px "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
 
 .category-content {
   margin-top: 30px; }

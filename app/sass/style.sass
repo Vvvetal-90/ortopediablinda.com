@@ -159,7 +159,8 @@ body
 		vertical-align: middle
 
 .button-pagination-before,
-.button-pagination-after
+.button-pagination-after,
+.button-productCat
 	transition: width 0.5s ease-out 0.5s
 	font-size: 12px
 	padding: 6px 12px
@@ -174,7 +175,10 @@ body
 .button-pagination-before:active .fa,
 .button-pagination-after:hover .fa,
 .button-pagination-after:focus .fa,
-.button-pagination-after:active .fa
+.button-pagination-after:active .fa,
+.button-productCat:hover .fa,
+.button-productCat:focus .fa,
+.button-productCat:active .fa
 	width: 15px
 
 .button-pagination-before:hover .fa,
@@ -184,8 +188,14 @@ body
 
 .button-pagination-after:hover .fa,
 .button-pagination-after:focus .fa,
-.button-pagination-after:active .fa
+.button-pagination-after:active .fa,
+.button-productCat:hover .fa,
+.button-productCat:focus .fa,
+.button-productCat:active .fa
 	padding-left: 5px
+
+.button-productCat
+	font-style: normal
 
 .category-link
 	background: url("../images/cat.jpg")  0 2px no-repeat
@@ -201,7 +211,7 @@ body
 
 
 .separator
-	margin: 20px 0
+	margin: 30px 0
 	height: 6px
 	width: 100%
 	background: #ccc url("../images/separator.jpg") repeat-x
@@ -433,6 +443,14 @@ p.first-paragraph
 	margin-top: 10px
 .images-gallery
 	margin: 10px 0
+
+.product-content-list
+	color: #ccc
+	margin: 10px 0
+	padding: 0 0 0 20px
+	li
+		color: #525050
+		font: 12px/15px "Lucida Sans Unicode", "Lucida Grande", sans-serif
 
 //---------------------------CATEGORY--------------------
 .category-content
